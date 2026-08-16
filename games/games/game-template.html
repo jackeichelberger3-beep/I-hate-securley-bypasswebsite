@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Game Template</title>
+  <style>
+    /* Simple page-level styles. Replace with your own. */
+    html,body{height:100%;margin:0;font-family:Inter,Arial;background:#0b0f14;color:#dfe7f5}
+    .wrap{display:flex;flex-direction:column;align-items:center;padding:20px}
+    h1{color:#8ab4f8}
+    .play{background:#8ab4f8;color:#041027;padding:10px 16px;border-radius:8px;border:none;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>My Game Title</h1>
+    <p>Instructions: Edit this file. Put your HTML/JS/CSS here. Use relative asset paths if needed.</p>
+    <button class="play" onclick="start()">Play</button>
+
+    <div id="game" style="margin-top:14px;max-width:900px;width:100%"></div>
+  </div>
+
+  <script>
+    // Example: simple placeholder
+    function start(){
+      document.getElementById('game').innerHTML = '<p style="color:#cfe9ff">Game running — replace with your code.</p>';
+    }
+
+    // Helpful tips in this file:
+    // - Keep everything self-contained in this file for ease of copying.
+    // - If you split assets into subfolders, keep them inside games/ so relative paths work (e.g., images/).
+    // - Use window.parent.postMessage(...) if you need to communicate with the parent (hub).
+  </script>
+</body>
+</html>
